@@ -22,7 +22,8 @@
 ![alt text](<4.terraform output.jpg>)
 
 Задание 6
-6. ```variable "vms_resources" {
+```
+variable "vms_resources" {
   default = {
     web = {
       cores = 2
