@@ -40,9 +40,10 @@
 variable "metadata" {
   default = {
     serial-port-enable = 1
-    ssh-keys           = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILL13RigE0jLY4VYNjozf4uCXnOjz/b+ISKSp9TSVGfj bist@debian"
+    ssh-keys           = "ubuntu:ssh-ed25519 A..."
   }
 }
+```
 ![alt text](<6.terraform plan.jpg>)
 
 7. ![alt text](7.console.jpg)
