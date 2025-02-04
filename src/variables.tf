@@ -58,12 +58,22 @@ variable "vpc_name_b" {
 
 ###main vars
 
+### prefix name
+
+variable "prefix_name" {
+  type=map(string)
+  default = {
+    env = "developer"
+    project = "platform"
+  }
+}
+
 variable "vm__web_family" {
   type = string
   default = "ubuntu-2004-lts"
 }
 
-variable "vm_name" {
+variable "vm_web_name" {
   type = string
   default = "netology-develop-platform"
 }
@@ -105,7 +115,7 @@ variable "vm_family" {
 
 variable "vm_db_name" {
   type = string
-  default = "netology-develop-platform-db"
+  default = "db"
 }
 
 variable "vm_db_platform_id" {
